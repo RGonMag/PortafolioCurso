@@ -1,0 +1,212 @@
+:root{
+    --rojo: #da0037;
+    --gris: #444444;
+    --negro: #171717;
+    --blanco: #ededed;
+    --blanco-ligero: rgba(237, 237, 237, 0.5);
+    --blaco-oscuro: rgba(237, 237, 237, 0.1);
+    --inter: 'Inter', sans-serif;
+    --dm-sans: 'DM-Sans', sans-serif;
+    --regular: 400;
+    --mediano: 500;
+    --negrita: 700;
+    --oscuro: 900;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+    font-family: var(--dm-sans);
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    background-color: #171717;
+}
+h1, h2, h3{
+    font-family: var(--inter);
+    font-weight: var(--negrita);
+    color: var(--blanco);
+}
+p{
+    color: var(--blanco-ligero);
+}
+a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+button{
+    border: none;
+    font-family: var(--dm-sans);
+    font-weight: var(--negrita); 
+}
+button:hover {
+    cursor: pointer;
+}
+.boton{
+    display: inline-block;
+    min-width: 144px;
+    margin: 6px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: var(--negrita);
+}
+.boton--rojo{
+    background-color: var(--rojo);
+    color: var(--blanco);
+}
+.boton--blanco{
+    background-color: var(--blanco);
+    color: var(--negro);
+}
+/*HEADER*/
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+}
+.header_titulo{
+    text-transform: uppercase;
+    text-decoration: underline;
+    letter-spacing: 3px;
+    font-size: 1.8rem;/*1.8rem = */
+    font-weight: var(--mediano);
+}
+/*MAIN*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    }
+.heroe{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.heroe_perfil{
+    width: 182px;
+    height: 182px;
+}
+.Heroe_img{
+    width: 182px;
+    height: 182px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid var(--rojo);
+}
+.heroe_titulo{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: var(--oscuro);
+    color: var(--blanco);
+}
+.hero_texto{
+    color: var(--blanco);
+    margin: 20px 0px 20px 0px;
+    text-align: justify;
+
+}
+.heroe_Botones{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.experiencia{
+    width: 100%;
+    margin: 32px 0;
+}
+.experiencia_titulo{
+    display: inline-block;
+    margin-bottom: 16px ;
+    border-bottom: 3px solid var(--blanco);
+}
+.experiencia_objeto{
+    margin: 24px 0;
+}
+.experiencia_objeto:first-child{
+    margin-top: 0;
+}
+.experiencia_objeto:last-child{
+    margin-bottom: 0;
+}
+.experiencia_objeto:nth-child(2){
+ margin-top: 0;   
+}
+.experiencia_objeto_titulo{
+    margin-bottom: 4px;
+}
+.Formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100%;
+    width: 100%;
+    margin-bottom: 32px;
+}
+.Formulario_asunto{
+    max-width: 100%;
+    width: 100%;
+    margin: 16px 0 16px 0;
+    height: 42;   
+    min-width: 42px;
+    min-height: 42px;
+    max-width: 300px;
+    border-radius: 2px;
+    background-color: var(--blanco-oscuro);
+    border: 2px var(--blanco-ligero);
+    color: var(--blanco);
+    padding: 10px;
+}
+.Formulario_mensaje{
+    margin-bottom: 16px;
+    padding: 10px 16px;
+    height: 100px;
+    min-width: 42px;
+    min-height: 42px;
+    width: 300px;
+    border-radius: 4px;
+    border: 2px solid var(--blanco);
+    background-color: var(--blanco-oscuro);
+    font-family: var(--dm-sans);
+    color: var(--blanco);
+    resize: none; 
+
+}
+.footer{
+    background-color: var(--gris);
+    border-top: 4px solid var(--rojo);
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;
+    height: 52px;
+    padding: 0px 20px;
+}
+.footer__social-contenedor{
+    width: 20px;
+    height: 20px;
+}
+.footer__social-contenedor:nth-child(2){
+  margin: 0px 12px;
+}
+.footer__imagen{
+    width: 20px;
+    height: 20px;
+}
+.footer__redes{
+    display: flex;
+    align-items: start;  
+    padding: 10px;
+}
+
+
+
+
+
+
+

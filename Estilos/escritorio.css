@@ -1,0 +1,36 @@
+main{
+    padding: 0px 15%;
+}
+
+.heroe{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.heroe_info{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding-right: 80px;
+}
+.heroe_titulo{
+    text-align: start;
+}
+.experiencia_contenedor{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.experiencia_contenedor div:nth-child(3){
+    margin-top: 0px;
+}
+.formulario__asunto
+.formulario__texto {
+    max-width: 50%;
+}
+
+.experiencia__contenedor div {
+    margin-top: 0;
+}
+
+.boton .boton {
+    width: 100%;
+    max-width: 100% ;
+}
